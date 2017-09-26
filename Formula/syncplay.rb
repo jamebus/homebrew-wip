@@ -7,6 +7,8 @@ class Syncplay < Formula
   sha256   "37fc2b3d1d6d49e2289dcdeffcf24ebdafbc24398411cff4666e09d49405759d"
   head     "https://github.com/Syncplay/syncplay.git"
 
+  depends_on :python if MacOS.version <= :snow_leopard
+
   resource "twisted" do
     url "https://files.pythonhosted.org/packages/a2/37/298f9547606c45d75aa9792369302cc63aa4bbcf7b5f607560180dd099d2/Twisted-17.9.0.tar.bz2"
     sha256 "0da1a7e35d5fcae37bc9c7978970b5feb3bc82822155b8654ec63925c05af75c"
