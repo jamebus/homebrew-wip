@@ -3,8 +3,8 @@ class Syncplay < Formula
 
   desc     "Client/server to synchronize media playback on many computers"
   homepage "http://syncplay.pl/"
-  url      "https://github.com/Syncplay/syncplay/archive/v1.5.1.tar.gz"
-  sha256   "c4fe1333797b0aea67b63437ee2bd7ff88324ad0167d93e81b0b8fa1756d2c9a"
+  url      "https://github.com/Syncplay/syncplay/archive/v1.5.2.tar.gz"
+  sha256   "8a6a6e73b28e842230b4deef3b031f8ebeea5e30ffca393f2c4f8de207c6f428"
   head     "https://github.com/Syncplay/syncplay.git"
 
   depends_on :python if MacOS.version <= :snow_leopard
