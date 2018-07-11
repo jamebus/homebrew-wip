@@ -3,15 +3,15 @@ class Syncplay < Formula
 
   desc     "Client/server to synchronize media playback on many computers"
   homepage "http://syncplay.pl/"
-  url      "https://github.com/Syncplay/syncplay/archive/v1.5.3.tar.gz"
-  sha256   "db7dff9362645e7ed1f79eb5c70a742a8ffb6f52c9412def6766c2a9a55260fa"
+  url      "https://github.com/Syncplay/syncplay/archive/v1.5.5.tar.gz"
+  sha256   "19f266665daa297794dd6857319da9bb14274c8c804aca6b960e11465085223c"
   head     "https://github.com/Syncplay/syncplay.git"
 
-  depends_on :python if MacOS.version <= :snow_leopard
+  depends_on "python@2" if MacOS.version <= :snow_leopard
 
   resource "twisted" do
-    url "https://files.pythonhosted.org/packages/a2/37/298f9547606c45d75aa9792369302cc63aa4bbcf7b5f607560180dd099d2/Twisted-17.9.0.tar.bz2"
-    sha256 "0da1a7e35d5fcae37bc9c7978970b5feb3bc82822155b8654ec63925c05af75c"
+    url "https://files.pythonhosted.org/packages/12/2a/e9e4fb2e6b2f7a75577e0614926819a472934b0b85f205ba5d5d2add54d0/Twisted-18.4.0.tar.bz2"
+    sha256 "a4cc164a781859c74de47f17f0e85f4bce8a3321a9d0892c015c8f80c4158ad9"
   end
 
   resource "incremental" do
@@ -20,8 +20,8 @@ class Syncplay < Formula
   end
 
   resource "zope.interface" do
-    url "https://files.pythonhosted.org/packages/bd/d2/25349ed41f9dcff7b3baf87bd88a4c82396cf6e02f1f42bb68657a3132af/zope.interface-4.4.3.tar.gz"
-    sha256 "d6d26d5dfbfd60c65152938fcb82f949e8dada37c041f72916fef6621ba5c5ce"
+    url "https://files.pythonhosted.org/packages/ac/8a/657532df378c2cd2a1fe6b12be3b4097521570769d4852ec02c24bd3594e/zope.interface-4.5.0.tar.gz"
+    sha256 "57c38470d9f57e37afb460c399eb254e7193ac7fb8042bd09bdc001981a9c74c"
   end
 
   resource "constantly" do
